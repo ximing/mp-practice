@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ESNext",
+    "noImplicitAny": false,
+    "declaration": false,
+    "removeComments": true,
+    "preserveConstEnums": false,
+    "sourceMap": false,
+    "allowJs": true,
+    "jsx": "preserve",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["esnext"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "node_modules/miniprogram-api-typings/types/index.d.ts"
+  ],
+  "compileOnSave": false
+}

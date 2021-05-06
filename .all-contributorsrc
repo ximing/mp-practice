@@ -1,0 +1,58 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "ximing",
+      "name": "席铭",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4659887?v=4",
+      "profile": "https://ximing.ren",
+      "contributions": [
+        "code",
+        "blog",
+        "doc",
+        "example",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "yozosann",
+      "name": "yozosann",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19776974?v=4",
+      "profile": "https://github.com/yozosann",
+      "contributions": [
+        "bug",
+        "code"
+      ]
+    },
+    {
+      "login": "liujin10",
+      "name": "liujin123456",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18552493?v=4",
+      "profile": "https://github.com/liujin10",
+      "contributions": [
+        "bug",
+        "code"
+      ]
+    },
+    {
+      "login": "ShiningDan",
+      "name": "Yuchen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23012618?v=4",
+      "profile": "https://github.com/ShiningDan",
+      "contributions": [
+        "bug",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "mpbuild",
+  "projectOwner": "ximing",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
