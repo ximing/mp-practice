@@ -20,7 +20,6 @@ module.exports = {
     path: path.join(__dirname, dist),
     npm: 'npm',
   },
-  exts: ['.ts', '.js', '.json', '.wxml', '.wxss'],
   optimization: {
     // 如果需要压缩，配置 JS 固话需要过滤的 comment
     minimize: {

@@ -17,5 +17,13 @@
     "src/**/*.tsx",
     "node_modules/miniprogram-api-typings/types/index.d.ts"
   ],
-  "compileOnSave": false
+  "compileOnSave": false,
+  "references": [
+    {
+      "path": "../mpu"
+    },
+    {
+      "path": "../mpx"
+    }
+  ]
 }

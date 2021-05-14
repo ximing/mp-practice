@@ -1,5 +1,5 @@
 {
-  "name": "demo",
+  "name": "example",
   "private": true,
   "version": "1.0.0",
   "description": "",
@@ -10,11 +10,12 @@
     "dev": "mpb -w"
   },
   "keywords": [],
-  "author": "",
+  "author": "ximing",
   "license": "ISC",
   "dependencies": {
     "querystring": "^0.2.0",
-    "util": "^0.12.3"
+    "util": "^0.12.3",
+
   },
   "devDependencies": {
     "@babel/plugin-external-helpers": "^7.2.0",
@@ -32,7 +33,7 @@
     "@babel/preset-typescript": "^7.3.3",
     "babel-plugin-transform-define": "^2.0.0",
     "miniprogram-api-typings": "^3.3.2",
-    "mpbuild": "^4.1.6",
-    "mpbuild-cli": "^1.0.0"
+    "mpbuild": "^4.2.5",
+    "mpbuild-cli": "^1.1.0"
   }
 }
