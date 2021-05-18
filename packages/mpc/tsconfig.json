@@ -15,11 +15,13 @@
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "moduleResolution": "node",
+    "outDir": "./dist/",
+    "rootDir": "./src",
     "composite": true,
     "lib": ["dom", "es2015"],
     "jsx": "react",
     "target": "es6",
-    "typeRoots": ["node_modules/@types","../../node_modules/@types"]
+    "typeRoots": ["node_modules/@types", "../../node_modules/@types"]
   },
   "include": ["src", "__tests__", "../../node_modules/miniprogram-api-typings/types/index.d.ts"],
   "references": [

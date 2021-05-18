@@ -2,11 +2,12 @@
 import { runSetUp, pageOnUnload, pageOnLoad, effect } from '@wxjs/mpc';
 
 function useAModule(a) {
-  const [getA, setA] = useData({ a });
+  const aData = useData({ a });
 
   pageOnLoad(() => {
     const timmer = setTimeout(() => {
-      setA(data++);
+      aData.a += 1;
+      //或 aData.set({a:a+1})
     }, 1000);
   });
 
@@ -14,28 +15,28 @@ function useAModule(a) {
     clearTimeout(timmer);
   });
 
-  return { getA, setA };
+  return aData;
 }
 
 function useBModule(aData, setA) {
-  const dataA = useData({ b: aData.get() + 2 });
-  const stateA = useState({ i: 1 });
+  const bData = useData({ b: aData.a + 2 });
+  const sData = useState({ i: 1 });
 
   effect(() => {
-    console.log(aData, a);
-  }, [dataA, stateA]);
+    console.log(bData, sData);
+  }, [bData, sData]);
 
   function onBtnTab() {
-    a.i += 1;
+    bData.b += 1;
     console.log(aData.a);
   }
 
-  return [data, onBtnTab];
+  return [bData, onBtnTab];
 }
 
 const config = runSetUp(() => {
-  const [aData, setA] = useAModule(3);
-  const [bData, onBtnTab] = useBModule(aData, setA);
+  const aData = useAModule(3);
+  const bData = useBModule(aData);
   return {
     data: {
       newAData: aData,

@@ -9,7 +9,7 @@
     "prepublish": "npm run build"
   },
   "main": "dist/index.js",
-  "types": "src/index.ts",
+  "types": "dist/index.d.ts",
   "module": "dist/index.esm.js",
   "keywords": [],
   "author": "ximing",

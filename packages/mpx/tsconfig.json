@@ -15,6 +15,8 @@
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "moduleResolution": "node",
+    "outDir": "./dist/",
+    "rootDir": "./src",
     "lib": ["dom", "es2015"],
     "jsx": "react",
     "target": "es6",

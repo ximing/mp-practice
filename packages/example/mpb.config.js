@@ -68,7 +68,7 @@ module.exports = {
   plugins: [
     new MPB.PolymorphismPlugin({ platform: 'wx', blockcode: true }),
     new MPB.CleanMbpPlugin({
-      path: [`${dist}/**/*`, `!${dist}/project.config.json`],
+      path: [`${dist}/**/*`, `!${dist}/project.config.json`,`!${dist}/project.private.config.json`],
     }),
     new MPB.TsTypeCheckPlugin({
       project: __dirname,

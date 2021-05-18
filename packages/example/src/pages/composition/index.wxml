@@ -1,4 +1,12 @@
 <view>
     <button bindtap="addA">click</button>
-    <text>{{a.a}}</text>
+    <view>
+        <text>{{a.v}}</text>
+        <text>{{a.c}}</text>
+        <text>{{a.d}}</text>
+    </view>
+    <view>
+        <text>{{a1[0]}}</text>
+    </view>
+    <button bindtap="printQuery">printQuery</button>
 </view>

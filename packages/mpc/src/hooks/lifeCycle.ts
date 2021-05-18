@@ -1,48 +1,40 @@
 import { useInstance } from './useInstance';
-import { pagelifeCycle } from '../helper';
+import { ensureLC } from '../helper';
 
-function ensure(ins: any) {
-  if (!ins.$lc$) {
-    pagelifeCycle.forEach((key) => {
-      ins.$lc$ = { [key]: [] };
-    });
-  }
-}
-
-function execLifeCycle(lck: any, fn: Function) {
+function registerLifeCycle(lck: any, fn: Function) {
   const ins = useInstance();
-  ensure(ins);
+  ensureLC(ins);
   ins.$lc$[lck].push(fn);
 }
 
 export const pageOnLoad = function (
   fn: (query: Record<string, string | undefined>) => void | Promise<void>
 ) {
-  execLifeCycle('onLoad', fn);
+  registerLifeCycle('onLoad', fn);
 };
 
 export const pageOnShow = function (fn: () => void | Promise<void>) {
-  execLifeCycle('onShow', fn);
+  registerLifeCycle('onShow', fn);
 };
 
 export const pageOnReady = function (fn: () => void | Promise<void>) {
-  execLifeCycle('onReady', fn);
+  registerLifeCycle('onReady', fn);
 };
 
 export const pageOnHide = function (fn: () => void | Promise<void>) {
-  execLifeCycle('onHide', fn);
+  registerLifeCycle('onHide', fn);
 };
 
 export const pageOnUnload = function (fn: () => void | Promise<void>) {
-  execLifeCycle('onUnload', fn);
+  registerLifeCycle('onUnload', fn);
 };
 
 export const pageOnPullDownRefresh = function (fn: () => void | Promise<void>) {
-  execLifeCycle('onPullDownRefresh', fn);
+  registerLifeCycle('onPullDownRefresh', fn);
 };
 
 export const pageOnReachBottom = function (fn: () => void | Promise<void>) {
-  execLifeCycle('onReachBottom', fn);
+  registerLifeCycle('onReachBottom', fn);
 };
 
 export const pageOnShareAppMessage = function (
@@ -51,13 +43,13 @@ export const pageOnShareAppMessage = function (
     options: WechatMiniprogram.Page.IShareAppMessageOption
   ) => WechatMiniprogram.Page.ICustomShareContent | void
 ) {
-  execLifeCycle('onShareAppMessage', fn);
+  registerLifeCycle('onShareAppMessage', fn);
 };
 
 export const pageOnShareTimeline = function (
   fn: () => WechatMiniprogram.Page.ICustomTimelineContent | void
 ) {
-  execLifeCycle('onShareTimeline', fn);
+  registerLifeCycle('onShareTimeline', fn);
 };
 
 export const pageOnAddToFavorites = function (
@@ -65,7 +57,7 @@ export const pageOnAddToFavorites = function (
     options: WechatMiniprogram.Page.IAddToFavoritesOption
   ) => WechatMiniprogram.Page.IAddToFavoritesContent
 ) {
-  execLifeCycle('onAddToFavorites', fn);
+  registerLifeCycle('onAddToFavorites', fn);
 };
 
 export const pageOnPageScroll = function (
@@ -74,7 +66,7 @@ export const pageOnPageScroll = function (
     options: WechatMiniprogram.Page.IPageScrollOption
   ) => void | Promise<void>
 ) {
-  execLifeCycle('onPageScroll', fn);
+  registerLifeCycle('onPageScroll', fn);
 };
 
 export const pageOnResize = function (
@@ -83,7 +75,7 @@ export const pageOnResize = function (
     options: WechatMiniprogram.Page.IResizeOption
   ) => void | Promise<void>
 ) {
-  execLifeCycle('onResize', fn);
+  registerLifeCycle('onResize', fn);
 };
 
 export const pageOnTabItemTap = function (
@@ -92,5 +84,5 @@ export const pageOnTabItemTap = function (
     options: WechatMiniprogram.Page.ITabItemTapOption
   ) => void | Promise<void>
 ) {
-  execLifeCycle('onTabItemTap', fn);
+  registerLifeCycle('onTabItemTap', fn);
 };
