@@ -17,13 +17,7 @@
     "moduleResolution": "node",
     "lib": ["dom", "es2015"],
     "jsx": "react",
-    "target": "es6",
-    "composite": true
+    "target": "es6"
   },
-  "include": ["src", "__tests__"],
-  "references": [
-    {
-      "path": "../mpu"
-    }
-  ]
+  "include": ["src"]
 }

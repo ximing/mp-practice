@@ -8,6 +8,7 @@ module.exports = {
       pages: {
         // key路由跳转的页面：value源代码所在位置
         'pages/main/index': '/pages/main/index',
+        'pages/composition/index': '/pages/composition/index',
       },
     },
   ],

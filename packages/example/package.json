@@ -15,7 +15,9 @@
   "dependencies": {
     "querystring": "^0.2.0",
     "util": "^0.12.3",
-
+    "@wxjs/mpu": "^1.0.0",
+    "@wxjs/mpx": "^1.0.0",
+    "@wxjs/mpc": "^1.0.0"
   },
   "devDependencies": {
     "@babel/plugin-external-helpers": "^7.2.0",

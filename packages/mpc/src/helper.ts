@@ -1,0 +1,15 @@
+export const pagelifeCycle = [
+  'onLoad',
+  'onShow',
+  'onReady',
+  'onHide',
+  'onUnload',
+  'onPullDownRefresh',
+  'onReachBottom',
+  'onShareAppMessage',
+  'onShareTimeline',
+  'onAddToFavorites',
+  'onPageScroll',
+  'onResize',
+  'onTabItemTap',
+];

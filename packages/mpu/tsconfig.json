@@ -7,8 +7,8 @@
     "removeComments": true,
     "preserveConstEnums": false,
     "sourceMap": false,
+    "composite": true,
     "allowJs": true,
-    "skipLibCheck": true,
     "jsx": "preserve",
     "typeRoots": ["node_modules/@types", "../../node_modules/@types"],
     "lib": ["esnext"]
@@ -19,15 +19,5 @@
     "../../node_modules/miniprogram-api-typings/types/index.d.ts"
   ],
   "compileOnSave": false,
-  "references": [
-    {
-      "path": "../mpu"
-    },
-    {
-      "path": "../mpx"
-    },
-    {
-      "path": "../mpc"
-    }
-  ]
+  "references": []
 }

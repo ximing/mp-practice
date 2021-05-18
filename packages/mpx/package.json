@@ -2,12 +2,19 @@
   "name": "@wxjs/mpx",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepublish": "npm run build"
   },
+  "main": "dist/index.js",
+  "types": "src/index.ts",
+  "module": "dist/index.esm.js",
   "keywords": [],
   "author": "ximing",
   "license": "ISC",
-
+  "dependencies": {
+    "@wxjs/mpu": "^1.0.0"
+  }
 }

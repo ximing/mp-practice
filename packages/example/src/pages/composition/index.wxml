@@ -1,0 +1,4 @@
+<view>
+    <button bindtap="addA">click</button>
+    <text>{{a.a}}</text>
+</view>

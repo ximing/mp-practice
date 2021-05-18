@@ -24,7 +24,7 @@ module.exports = {
     // 如果需要压缩，配置 JS 固话需要过滤的 comment
     minimize: {
       // js: needUglify ? { output: { comments: /javascript-obfuscator:disable|javascript-obfuscator:enable/} } : false,
-      js: true,
+      js: false,
       wxml: true,
       json: true,
       path: minimize_path,
@@ -77,7 +77,7 @@ module.exports = {
     //     project: __dirname
     // }),
     new MPB.ProjectConfigPlugin({
-      projectname: 'test',
+      projectname: 'wxjs',
       appId: 'test',
       setting: {
         minified: true,
