@@ -1,0 +1,2 @@
+<view>comp{{c}}</view>
+<button class="share_btn" open-type="share" bindtap="emptyFunc">share</button>

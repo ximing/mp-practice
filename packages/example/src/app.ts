@@ -1,1 +1,5 @@
-App({});
+App({
+  onHide() {
+    console.log('onhide');
+  },
+});

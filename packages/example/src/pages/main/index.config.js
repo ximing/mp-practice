@@ -1,4 +1,6 @@
 module.exports = {
   navigationBarTitleText: '首页',
-  usingComponents: {},
+  usingComponents: {
+    comp1: './components/comp1/index',
+  },
 };
