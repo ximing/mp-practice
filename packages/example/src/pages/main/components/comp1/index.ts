@@ -10,10 +10,10 @@ Component({
   },
   created() {
     this.data.c = 2;
-    console.log(this);
+    console.log(this.emptyFunc);
     this.ready = function () {
       console.log('new ready');
-    }
+    };
   },
   ready() {
     console.log('origin ready');

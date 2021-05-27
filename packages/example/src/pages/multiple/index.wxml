@@ -1,0 +1,2 @@
+<button bindtap="onTap">a++</button>
+<button bindtap="open">open</button>

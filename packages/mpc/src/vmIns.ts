@@ -12,5 +12,6 @@ export const getCurrentVM = () => {
   if (vmInstance === null) {
     console.error('useXXX and onXXX hooks can only becalled during $setup()');
   }
-  return vmInstance;
+  return vmInstance as WechatMiniprogram.Page.InstanceMethods<any> &
+    WechatMiniprogram.Page.InstanceProperties;
 };
