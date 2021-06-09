@@ -1,7 +1,7 @@
 import { useInstance } from './useInstance';
 
 export const effect = function (fn: Function, el: any[]) {
-  const ins = useInstance();
+  const ins = useInstance() as any;
   if (!ins.$effect$) {
     ins.$effect$ = [];
   }

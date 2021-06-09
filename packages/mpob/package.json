@@ -1,0 +1,23 @@
+{
+  "name": "@wxjs/mpob",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepublish": "npm run build"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.esm.js",
+  "keywords": [],
+  "author": "ximing",
+  "license": "ISC",
+  "dependencies": {
+    "@wxjs/mpu": "^1.0.0"
+  },
+  "devDependencies": {
+    "miniprogram-api-typings": "^3.3.2"
+  }
+}

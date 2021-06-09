@@ -4,8 +4,15 @@ import { ensureLC } from '../helper';
 function registerLifeCycle(lck: any, fn: Function) {
   const ins = useInstance();
   ensureLC(ins);
-  ins.$lc$[lck].push(fn);
+  (ins as any).$lc$[lck].push(fn);
 }
+
+export const execLifeCycle = function (this: any, lck: string) {
+  (this as any).$lc$[lck] &&
+    (this as any).$lc$[lck].forEach((fn: Function) => {
+      fn.apply(this);
+    });
+};
 
 export const pageOnLoad = function (
   fn: (query: Record<string, string | undefined>) => void | Promise<void>
@@ -85,4 +92,23 @@ export const pageOnTabItemTap = function (
   ) => void | Promise<void>
 ) {
   registerLifeCycle('onTabItemTap', fn);
+};
+
+export const compOnCreated = function (fn: () => void) {
+  registerLifeCycle('create', fn);
+};
+export const compOnAttached = function (fn: () => void) {
+  registerLifeCycle('attached', fn);
+};
+export const compOnReady = function (fn: () => void) {
+  registerLifeCycle('ready', fn);
+};
+export const compOnMoved = function (fn: () => void) {
+  registerLifeCycle('moved', fn);
+};
+export const compOnDetached = function (fn: () => void) {
+  registerLifeCycle('detached', fn);
+};
+export const compOnError = function (fn: () => void) {
+  registerLifeCycle('error', fn);
 };

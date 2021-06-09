@@ -14,6 +14,8 @@ export const pagelifeCycle = [
   'onTabItemTap',
 ];
 
+export const componentLifeCycle = ['created', 'attached', 'ready', 'moved', 'detached', 'error'];
+
 export function ensureLC(ins: any) {
   if (!ins.$lc$) {
     ins.$lc$ = {};

@@ -89,7 +89,7 @@ export const useData = function <T>(value: T): {
   }
 
   function get() {
-    return key ? ins.data[key] : value;
+    return key ? (ins as any).data[key] : value;
   }
 
   observer(ins, resVal, () => key, value, trigger);

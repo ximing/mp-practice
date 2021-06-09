@@ -35,7 +35,7 @@
     "@babel/preset-typescript": "^7.3.3",
     "babel-plugin-transform-define": "^2.0.0",
     "miniprogram-api-typings": "^3.3.2",
-    "mpbuild": "^4.2.5",
+    "mpbuild": "^4.4.0",
     "mpbuild-cli": "^1.1.0"
   }
 }

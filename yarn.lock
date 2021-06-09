@@ -9001,10 +9001,10 @@ mpbuild-cli@^1.1.0:
     chalk "^4.1.0"
     commander "^7.1.0"
 
-mpbuild@^4.2.5:
-  version "4.3.0"
-  resolved "https://registry.nlark.com/mpbuild/download/mpbuild-4.3.0.tgz#f404128fafb3a2f7ecb46f40c3a6420c1c18b0e9"
-  integrity sha1-9AQSj6+zovfstG9Aw6ZCDBwYsOk=
+mpbuild@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.nlark.com/mpbuild/download/mpbuild-4.4.0.tgz#11bfc9b576fb679a3ce75b7ea2b48e21d925477f"
+  integrity sha1-Eb/JtXb7Z5o851t+orSOIdklR38=
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.5.5"

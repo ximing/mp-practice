@@ -1,3 +1,6 @@
+/*
+ * 逻辑内聚的写法，对应大规模小程序页面的开发
+ * */
 import { effect, runSetUp, useData, useInstance, useQuery, useState } from '@wxjs/mpc';
 
 function useAModule() {

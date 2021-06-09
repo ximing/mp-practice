@@ -1,0 +1,2 @@
+<view style="width:{{ b > 0 ? b+'rpx' : '50rpx'}};height:100rpx;background: red">{{b-a}}</view>
+<view style="width:{{ b > 0 ? '{{b}}rpx' : '50rpx'}};height:100rpx;background: red">{{b-a}}</view>
