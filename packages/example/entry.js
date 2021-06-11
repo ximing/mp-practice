@@ -11,6 +11,7 @@ module.exports = {
         'pages/composition/index': '/pages/composition/index',
         'pages/multiple/index': '/pages/multiple/index',
         'pages/tpl/index': '/pages/tpl/index',
+        'pages/router/index': '/pages/router/index',
       },
     },
   ],

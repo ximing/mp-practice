@@ -1,0 +1,1 @@
+<button bindtap="reLaunch">reLaunch</button>
