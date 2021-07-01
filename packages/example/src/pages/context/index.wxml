@@ -1,0 +1,4 @@
+<view>
+    <text>134</text>
+    <comp1 pc="{{pc}}"/>
+</view>

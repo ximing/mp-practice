@@ -1,3 +1,2 @@
 <button bindtap="reLaunch">reLaunch</button>
 <button bindtap="404">404</button>
-<button bindtap="subPage">subPage</button>

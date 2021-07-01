@@ -1,0 +1,3 @@
+<view>comp{{c}}</view>
+<view>page{{a}}</view>
+<view>{{b}}</view>

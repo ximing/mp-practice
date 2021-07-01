@@ -11,7 +11,14 @@ module.exports = {
         'pages/composition/index': '/pages/composition/index',
         'pages/multiple/index': '/pages/multiple/index',
         'pages/tpl/index': '/pages/tpl/index',
+        'pages/context/index': '/pages/context/index',
         'pages/router/index': '/pages/router/index',
+      },
+    },
+    {
+      root: 'sub1',
+      pages: {
+        'pages/router/index': '/subPackages/sub1/pages/router/index',
       },
     },
   ],
