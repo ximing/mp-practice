@@ -24,6 +24,7 @@ Page({
       fail(e) {
         console.log('fail', e);
       },
+      complete() {},
     });
   },
 });
